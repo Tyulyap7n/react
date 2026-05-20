@@ -8,7 +8,7 @@ app = FastAPI()
 # Разрешаем запросы с фронтенда, запущенного на другом порту
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"], # Адрес, где работает React
+    allow_origins=["https://react-lfki.onrender.com"], # Адрес, где работает React
     allow_methods=["*"],
     allow_headers=["*"],
 )
